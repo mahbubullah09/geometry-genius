@@ -71,3 +71,19 @@ function parallelogramArea(){
 
 
 }
+
+
+function rhombusArea(){
+
+    const d1=getInputFieldValue('d1');
+    const d2= getInputFieldValue('d2');
+    if(isNaN(d1) || isNaN(d2)){
+        alert("Provide a valid number");
+       return;
+    }
+    const area= 0.5*d1*d2;
+
+    setText('rhombusArea', area)
+
+
+}
