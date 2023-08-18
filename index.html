@@ -44,8 +44,8 @@
                 <img class="w-36 mx-auto " src="./images/triangle.png" alt="">
                 <h2 class="mt-6 text-xl font-semibold text-[#111111] text-opacity-80">Triangle</h2>
                 <p class="my-3 text-sm">Area (A) =0.5 x b x h</p>
-                <p class="mb-3"><input id="triangleBase" class="bg-slate-200 w-12" type="text"> cm
-                    <input id="triangleHeight" class="ml-2 bg-slate-200 w-12" type="text" name="" id=""> cm
+                <p class="mb-3"><input id="triangleBase" placeholder="b" class= "pl-1 bg-slate-200 w-12" type="text"> cm
+                    <input id="triangleHeight" placeholder="h" class="pl-1 bg-slate-200 w-12" type="text" name="" id=""> cm
                 </p>
                 <p>Area: <span id="triangleArea"></span> </p>
                 <button onclick="triangleArea()"
@@ -60,7 +60,7 @@
                 <p class="my-3 text-sm">Area (A) = w x l</p>
                 <p class="mb-3"><input id="rectangleWidth" class="bg-slate-200 w-12 pl-1" type="text" placeholder="w">
                     cm
-                    <input id="rectangleHeight" class="pl-1 ml-2 bg-slate-200 w-12" placeholder="l" type="text" name=""
+                    <input id="rectangleHeight" class="pl-1  bg-slate-200 w-12" placeholder="l" type="text" name=""
                         id=""> cm
                 </p>
                 <p>Area: <span id="rectangleeArea"></span> </p>
@@ -76,7 +76,7 @@
                 <p class="my-3 text-sm">Area (A) = b x h</p>
                 <p class="mb-3"><input id="parallelogramBase" placeholder="b" class="pl-1 bg-slate-200 w-12"
                         type="text"> cm
-                    <input id="parallelogramHeight" class="pl-1 ml-2 bg-slate-200 w-12" placeholder="h" type="text"
+                    <input id="parallelogramHeight" class="pl-1  bg-slate-200 w-12" placeholder="h" type="text"
                         name="" id=""> cm
                 </p>
 
@@ -92,7 +92,7 @@
                 <h2 class="mt-8 text-xl font-semibold text-[#111111] text-opacity-80">Rhombus</h2>
                 <p class="my-3 text-sm">Area (A) =0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                 <p class="mb-3"><input id="d1" placeholder="d1" class="pl-1 bg-slate-200 w-12" type="text"> cm
-                    <input id="d2" class=" pl-1 ml-2 bg-slate-200 w-12" placeholder="d2" type="text" name="" id=""> cm
+                    <input id="d2" class=" pl-1  bg-slate-200 w-12" placeholder="d2" type="text" name="" id=""> cm
                 </p>
 
                 <p>Area: <span id="rhombusArea"></span> </p>
@@ -108,7 +108,7 @@
                 <p class="my-3 text-sm">Area (A) =0.5 x p x a</p>
                 <p class="mb-3"><input id="pentagonParameter" placeholder="p" class="pl-1 bg-slate-200 w-12"
                         type="text"> cm
-                    <input id="pentagonApothem" class="pl-1 ml-2 bg-slate-200 w-12" placeholder="a" type="text" name=""
+                    <input id="pentagonApothem" class="pl-1  bg-slate-200 w-12" placeholder="a" type="text" name=""
                         id=""> cm
                 </p>
 
@@ -124,7 +124,7 @@
                 <h2 class="mt-14 text-xl font-semibold text-[#111111] text-opacity-80">Ellipse</h2>
                 <p class="my-3 text-sm">Area (A) =π x a x b</p>
                 <p class="mb-3"><input id="ellipseAaxis" placeholder="a" class="pl-1 bg-slate-200 w-12" type="text"> cm
-                    <input id="ellipseBaxis" class="pl-1 ml-2 bg-slate-200 w-12" placeholder="b" type="text" name="" id=""> cm
+                    <input id="ellipseBaxis" class="pl-1  bg-slate-200 w-12" placeholder="b" type="text" name="" id=""> cm
                 </p>
 
                 <p>Area: <span id="ellipsArea"></span> </p>
@@ -136,9 +136,14 @@
 
 
         </div>
-        <div id="area-colection " class=" mb-4 mr-2 rounded border-slate-500 border-solid border-2 flex-initial w-96">
+        <div  class=" mb-4 mr-2 rounded border-slate-500 border-solid border-2 flex-initial w-1/2">
             <p class="text-center font-semibold text-[#111111] text-opacity-80">Area Calculation</p>
             <hr class="w-32 mx-auto">
+            <div id="area-colection">
+
+            </div>
+
+
         </div>
     </main>
     <script src="./index.js"></script>

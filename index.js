@@ -12,6 +12,8 @@ function getInputFieldValue(fieldId){
 }
 
 
+
+
 function setText(id,area){
 
     const textId= document.getElementById(id);
@@ -20,9 +22,16 @@ function setText(id,area){
 
 }
 
-
-
-
+function areaCalculation(name,area){
+   const areaCalculationEntry=document.getElementById('area-colection');
+   const count=areaCalculationEntry.childElementCount;
+    
+   const p= document.createElement('p');
+   p.classList="text-xs my-2";
+    p.innerHTML =  `${count+1}. ${name} ${area} cm<sup>2</sup> <button class=" bg-[#E76F51] rounded px-2 py-2 text-white hover:bg-black text-xs ">Convert to m<sup>2</sup> </button>`
+    
+    areaCalculationEntry.appendChild(p);
+   }
 
 
 
@@ -35,12 +44,18 @@ function triangleArea() {
        return;
     }
 
+
    const area= 0.5*base*height;
-   console.log(area);
-   setText('triangleArea', area);
-   
- 
-}
+
+    setText('triangleArea', area);
+
+   areaCalculation('Triangle Area: ', area);
+
+
+   }
+
+
+
 
 
 function rectangleArea(){
@@ -55,7 +70,11 @@ function rectangleArea(){
 
    setText('rectangleeArea', area);
 
+   areaCalculation('Rectangle Area: ', area);
+
 }
+
+
 
 function parallelogramArea(){
 
@@ -68,9 +87,12 @@ function parallelogramArea(){
     const area=base*height;
 
     setText('parallelogramArea', area)
+    areaCalculation('Parallelogram Area: ', area);
 
 
 }
+
+
 
 
 function rhombusArea(){
@@ -84,9 +106,13 @@ function rhombusArea(){
     const area= 0.5*d1*d2;
 
     setText('rhombusArea', area)
+    areaCalculation('Rombus Area: ', area);
+
 
 
 }
+
+
 
 
 function pentagonArea(){
@@ -100,9 +126,12 @@ function pentagonArea(){
     const area= 0.5*parameter*apothem;
 
     setText('pentagonArea', area)
+    areaCalculation('Pentagon Area: ', area);
 
 
 }
+
+
 
 
 function ellipsArea(){
@@ -117,6 +146,7 @@ function ellipsArea(){
     const ellipsArea=area.toFixed(2);
 
     setText('ellipsArea', ellipsArea)
+    areaCalculation('Ellips Area: ', ellipsArea);
 
 
 }
