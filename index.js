@@ -87,3 +87,17 @@ function rhombusArea(){
 
 
 }
+function pentagonArea(){
+
+    const parameter=getInputFieldValue('pentagonParameter');
+    const apothem= getInputFieldValue('pentagonApothem');
+    if(isNaN(parameter) || isNaN(apothem)){
+        alert("Provide a valid number");
+       return;
+    }
+    const area= 0.5*parameter*apothem;
+
+    setText('pentagonArea', area)
+
+
+}

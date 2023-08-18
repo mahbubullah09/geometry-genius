@@ -96,13 +96,12 @@
 
                 <img class="w-36 mx-auto " src="./images/pentagon.png" alt="">
                 <h2 class="mt-6 text-xl font-semibold text-[#111111] text-opacity-80">Pentagon</h2>
-                <p class="my-3 text-sm">Area (A) =0.5 x p x b</p>
-                <p class="mb-3"><input class="bg-slate-200 w-12" type="text"> cm <input class="ml-2 bg-slate-200 w-12"
-                        type="text" name="" id=""> cm</p>
+                <p class="my-3 text-sm">Area (A) =0.5 x p x a</p>
+                <p class="mb-3"><input id="pentagonParameter" placeholder="p" class="pl-1 bg-slate-200 w-12" type="text"> cm 
+                    <input id="pentagonApothem" class="pl-1 ml-2 bg-slate-200 w-12" placeholder="a" type="text" name="" id=""> cm</p>
 
-                <p>Area: <span id="triangleArea"></span> </p>
-                <button
-                    class="mt-5 bg-sky-600 text-white w-44 py-2 mx-auto  rounded hover:bg-orange-500">Calculate</button>
+                <p>Area: <span id="pentagonArea"></span> </p>
+                <button onclick="pentagonArea()" class="mt-5 bg-sky-600 text-white w-44 py-2 mx-auto  rounded hover:bg-orange-500">Calculate</button>
 
 
             </div>
