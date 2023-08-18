@@ -87,6 +87,8 @@ function rhombusArea(){
 
 
 }
+
+
 function pentagonArea(){
 
     const parameter=getInputFieldValue('pentagonParameter');
@@ -98,6 +100,23 @@ function pentagonArea(){
     const area= 0.5*parameter*apothem;
 
     setText('pentagonArea', area)
+
+
+}
+
+
+function ellipsArea(){
+
+    const aAxis=getInputFieldValue('ellipseAaxis');
+    const bAxis= getInputFieldValue('ellipseBaxis');
+    if(isNaN(aAxis) || isNaN(bAxis)){
+        alert("Provide a valid number");
+       return;
+    }
+    const area= Math.PI*aAxis*bAxis;
+    const ellipsArea=area.toFixed(2);
+
+    setText('ellipsArea', ellipsArea)
 
 
 }
