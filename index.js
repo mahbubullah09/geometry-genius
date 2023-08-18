@@ -55,5 +55,19 @@ function rectangleArea(){
 
    setText('rectangleeArea', area);
 
+}
+
+function parallelogramArea(){
+
+    const base=getInputFieldValue('parallelogramBase');
+    const height= getInputFieldValue('parallelogramHeight');
+    if(isNaN(base) || isNaN(height)){
+        alert("Provide a valid number");
+       return;
+    }
+    const area=base*height;
+
+    setText('parallelogramArea', area)
+
 
 }
