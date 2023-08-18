@@ -39,9 +39,21 @@ function triangleArea() {
    console.log(area);
    setText('triangleArea', area);
    
+ 
+}
 
 
-    
+function rectangleArea(){
+   const width=getInputFieldValue('rectangleWidth');
+   const length=getInputFieldValue('rectangleHeight')
+
+   if(isNaN(width) || isNaN(length)){
+    alert("Provide a valid number");
+   return;
+}
+   const area=width*length;
+
+   setText('rectangleeArea', area);
 
 
 }
